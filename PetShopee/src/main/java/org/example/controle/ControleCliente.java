@@ -72,4 +72,9 @@ public class ControleCliente {
         }
         System.out.println("Paciente não encontrado para o cliente " + cliente.getNome());
     }
+    
+    public Map<Cliente, List<Paciente>> getClientesPacientes() {
+    return clientesPacientes;
+}
+
 }
