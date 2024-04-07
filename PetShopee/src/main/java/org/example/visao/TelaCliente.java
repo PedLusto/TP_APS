@@ -80,8 +80,12 @@ public class TelaCliente {
     }
 
     private Cliente encontrarCliente(String nome) {
-        // Implemente a busca do cliente pelo nome
-        // Se encontrar, retorne o cliente, caso contrário, retorne null
-        return null; // Apenas para compilamento, implemente a busca real
+    for (Cliente cliente : controleCliente.getClientesPacientes().keySet()) {
+        if (cliente.getNome().equalsIgnoreCase(nome)) {
+            return cliente;
+        }
+    }
+    return null; // Se não encontrar nenhum cliente com o nome especificado
+
     }
 }
