@@ -1,6 +1,6 @@
 package org.example.classes;
 
-public class Cliente {
+public class Cliente extends Entidade {
     private String nome;
     private String telefone;
     private String endereco;

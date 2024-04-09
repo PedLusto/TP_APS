@@ -1,6 +1,6 @@
 package org.example.classes;
 
-public class Paciente {
+public class Paciente extends Entidade {
     private String nome;
     private String especie;
     private int idade;
